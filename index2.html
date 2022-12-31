@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display Page</title>
+    <link rel="stylesheet" href="./style2.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+    </script>
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>MY Public IP ADDRESS : <span id="ip-address"> </span></h1>
+        <div class="list">
+            <div class="list1">
+                <p>Lat: <span id="lat"> </span></p>
+                <p>Long: <span id="Long"> </span></p>
+            </div>
+
+            <div class="list2">
+                <p> City: <span id="City"> </span></p>
+                <p>Region: <span id="Region"> </span></p>
+            </div>
+
+            <div class="list3">
+                <p>Organisation: <span id="Organisation"> </span></p>
+                <p> Hostname: <span id="hostname"> </span></p>
+            </div>
+        </div>
+
+        <div id="map-container" class="map-container"> </div>
+        <div class="list-dispaly">
+            <ul>
+                <li>Time Zone: <span id="Timezone"> </span></li>
+                <li>Date And Time: <span id="Date And Time"></span></li>
+                <li>Pincode: <span id="Pincode"> </span></li>
+                <li>Message: <span id="Message"></span></li>
+            </ul>
+        </div>
+
+
+        <div class="filter">
+            <input type="text" id="filter" placeholder="Filter" onkeyup="search()">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <g data-name="Layer 2">
+                    <path
+                        d="m20.71 19.29-3.4-3.39A7.92 7.92 0 0 0 19 11a8 8 0 1 0-8 8 7.92 7.92 0 0 0 4.9-1.69l3.39 3.4a1 1 0 0 0 1.42 0 1 1 0 0 0 0-1.42zM5 11a6 6 0 1 1 6 6 6 6 0 0 1-6-6z"
+                        data-name="search" />
+                </g>
+            </svg>
+        </div>
+        <div class="postbox">
+            <div id="postinfo"></div>
+        </div>
+    </div>
+
+    <script src="./script2.js"></script>
+</body>
+
+</html>
